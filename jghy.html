@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecImamu - XSS Challenge</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #ff0000;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: bgEffect 10s infinite;
+        }
+
+        @keyframes bgEffect {
+            0% { background-color: #000; }
+            50% { background-color: #330000; }
+            100% { background-color: #000; }
+        }
+
+        h1 {
+            font-size: 3.5em;
+            letter-spacing: 2px;
+            color: #ff0000;
+            text-shadow: 0 0 15px #ff0000, 0 0 30px #ff3333;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+        p {
+            font-size: 1.3em;
+            color: #fff;
+            text-shadow: 0 0 10px #ff0000;
+            margin-bottom: 30px;
+            animation: fadeInText 2s ease-in-out;
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            background-color: #1a1a1a;
+            color: #ff0000;
+            border: 1px solid #ff0000;
+            padding: 10px;
+            font-size: 1.2em;
+            width: 300px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        button {
+            background-color: #ff0000;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        button:hover {
+            background-color: #b30000;
+            transform: scale(1.1);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            color: #ff0000;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        footer span {
+            color: #ff0000;
+            cursor: pointer;
+            text-shadow: 0 0 5px #ff0000;
+        }
+
+        .output {
+            color: #00ff00;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>XSS Challenge</h1>
+        <p>Think you're a hacker? Try to inject your script here!</p>
+
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Enter your code...">
+            <button onclick="displayInput()">Submit</button>
+        </div>
+
+        <div class="output" id="output"></div>
+
+        <footer>
+            <p>Challenge by <span onclick="window.open('https://x.com/cybersecimamu?s=21', '_blank')">CyberSecImamu</span></p>
+        </footer>
+    </div>
+
+    <script src="path/to/xss.js"></script>
+
+    <script>
+        function displayInput() {
+            var input = document.getElementById('userInput').value;
+            document.getElementById('output').innerHTML = input;
+            checkForXSS(input);
+        }
+    </script>
+
+</body>
+</html>
