@@ -36,7 +36,6 @@ function randomFunction5() {
     return arr;
 }
 
-
 let fakeSecrets = [
     atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDcxMF8="),
     atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDcyMV8="),
@@ -58,61 +57,14 @@ let fakeSecrets = [
     atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc4N18="),
     atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc5OF8="),
     atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDgwOV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDcxMF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDcyMV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDczMl8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc0M18="),
+    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDg4OF8="), 
     atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc1NF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc2NV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc3Nl8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc4N18="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc5OF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDgwOV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDcxMF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDcyMV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDczMl8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc0M18="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc1NF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc2NV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc3Nl8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc4N18="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc5OF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDgwOV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDcxMF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDcyMV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDczMl8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc0M18="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc1NF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc2NV8="), 
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc4N18="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc5OF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDgwOV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDcxMF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDcyMV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDczMl8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc0M18="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc1NF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc2NV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc3Nl8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc4N18="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc5OF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDgwOV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDcyMV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDczMl8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc0M18="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc1NF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc2NV8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc3Nl8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc4N18="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDc5OF8="),
-    atob("SW1hbVVGe3F3ZW9wMTIxMV9wcHBwcHBscGxsbGxsbF8xMjAxMDAxMzYyMDg3OF8="), 
     
 ];
 
-
 function checkForXSS(input) {
     if (input.includes("alert")) {
-        let realFlag = fakeSecrets[87]; 
+        let realFlag = fakeSecrets[88]; 
         alert("Congratulations! Here's your hidden secret: " + realFlag);
     } else {
         alert("Try again!");
